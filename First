@@ -1,0 +1,31 @@
+interface Walker
+{
+    var speed
+    fun walk()
+}
+
+class GoodWalker : Walker
+{
+    override var speed : 5
+    override fun walk ()
+    {
+        println ("GoodWalker идет со скростью $speed км/ч")
+    }
+}
+
+class SadWalker : Walker
+{
+    override var speed : 4
+    override fun walk ()
+    {
+        println ("SadWalker идет со скростью $speed км/ч")
+    }
+}
+
+fun main
+{
+    val  Walker1 : Walker = GoodWalker()
+    val  Walker2 : Walker = SadWalker()
+    Walker1.walk()
+    Walker2.walk()
+}
