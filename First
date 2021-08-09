@@ -1,0 +1,14 @@
+interface Walker
+{
+    var speed
+    fun walk()
+}
+
+class GoodWalker : Walker
+{
+    override var speed : 5
+    override fun walk ()
+    {
+        println ("GoodWalker идет со скростью $speed км/ч")
+    }
+}
