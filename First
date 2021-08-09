@@ -1,0 +1,5 @@
+interface Walker
+{
+    var speed
+    fun walk()
+}
